@@ -1,3 +1,4 @@
+
 const tabs = [
   {
     icon: "/assets/lottie/vroom.lottie",
@@ -26,5 +27,20 @@ const tabs = [
 ];
 
 export const Features = () => {
-  return <section>Features</section>;
+  return (
+    <section>
+      <div className="container">
+        <h2></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quibusdam reiciendis labore corporis dolorum consequatur
+        </p>
+        {tabs.map((tab) => (
+          <div key={tab.title} >
+
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+  ;
 };
