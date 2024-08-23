@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link";
 import Button from "../ui/handleButton";
+import { MobileMenu } from "./MobileMenu";
 
 
 export const Header = () => {
@@ -24,7 +25,7 @@ export const Header = () => {
         </div>
         <div className="flex gap-4 items-center">
          <Button>Join me </Button>
-          <Image  src={'/assets/icon-menu.svg'} alt="Menu tag" width={32} height={12} className="cursor-pointer md:hidden"/>
+          <MobileMenu />
         </div>
       </div>
     </div>
